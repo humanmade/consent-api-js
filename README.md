@@ -99,19 +99,19 @@ Please check out the example plugin, and the above code examples.
 
 **What is the difference between the consent categories?**
 
-- statistics:
+- `statistics`:
 
 Cookies or any other form of local storage that are used exclusively for statistical purposes (Analytics Cookies).
 
-- statistics-anonymous:
+- `statistics-anonymous`:
 
 Cookies or any other form of local storage that are used exclusively for anonymous statistical purposes (Anonymous Analytics Cookies), that are placed on a first party domain, and that do not allow identification of particular individuals.
 
-- marketing:
+- `marketing`:
 
 Cookies or any other form of local storage required to create user profiles to send advertising or to track the user on a website or across websites for simular marketing purposes.
 
-- functional:
+- `functional`:
 
 The cookie or any other form of local storage is used for the sole purpose of carrying out the transmission of a
 communication over an electronic communications network;
@@ -122,6 +122,6 @@ The technical storage or access is strictly necessary for the legitimate
 purpose of enabling the use of a specific service explicitly requested by the subscriber or
 user. If cookies are disabled, the requested functionality will not be available. This makes them essential functional cookies.
 
-- preferences:
+- `preferences`:
 
 Cookies or any other form of local storage that can not be seen as statistics, statistics-anonymous, marketing or functional, and where the technical storage or access is necessary for the legitimate purpose of storing preferences.
