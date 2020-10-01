@@ -19,16 +19,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see https://www.gnu.org/licenses/.
  *
- * @package Altis/Consent
+ * @package altis/consent
  * @license http://www.gnu.org/licenses/gpl-2.0.html
  *
- * @wordpress-plugin
  * Plugin Name:       WP Consent API JS
- * Plugin URI:        https://wordpress.org/plugins/wp-consent-api
+ * Plugin URI:        https://github.com/humanmade/consent-api-js
  * Description:       Forks the JavaScript Consent API in rlankhorst/wp-consent-level-api. Consent Level API to read and register the current consent level for cookie management and improving compliance with privacy laws.
  * Version:           1.0.2
  * Author:            RogierLankhorst and Human Made
- * Author URI:        https://github.com/humanmade/consent-api-js
+ * Author URI:        https://humanmade.com
  * Requires at least: 5.0
  * Requires PHP:      5.6
  * License:           GPL2+
