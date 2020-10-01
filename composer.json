@@ -1,0 +1,19 @@
+{
+    "name": "altis/consent-api",
+    "description": "Consent API feature for Altis",
+    "type": "wordpress-plugin",
+    "require-dev": {
+        "humanmade/coding-standards": "^1.1.0"
+    },
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Human Made Limited",
+            "email": "hello@humanmade.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1"
+    }
+}
