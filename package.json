@@ -1,0 +1,29 @@
+{
+  "name": "altis-consent-api",
+  "version": "1.0.2",
+  "description": "Javascript Consent API to read and register the current consent category.",
+  "main": "plugin.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:php": "vendor/squizlabs/php_codesniffer/bin/phpcs -s --standard=phpcs.ruleset.xml .",
+    "lint:js": "eslint .",
+    "lint": "npm run lint:php && npm run lint:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humanmade/consent-api-js.git"
+  },
+  "keywords": [
+    "wordpress",
+    "altis",
+    "consent",
+    "gdpr",
+    "api"
+  ],
+  "author": "Human Made Limited <hello@humanmade.com>",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/humanmade/consent-api-js/issues"
+  },
+  "homepage": "https://github.com/humanmade/consent-api-js#readme"
+}
