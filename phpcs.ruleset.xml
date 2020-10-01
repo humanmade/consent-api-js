@@ -8,8 +8,6 @@
 
 	<!-- Use HM Coding Standards -->
 	<rule ref="vendor/humanmade/coding-standards">
-		<!-- Silence sniffs about namespace.php filenames. -->
-		<exclude name="HM.Files.FunctionFileName.WrongFile"/>
 		<!-- Ignore file comment sniff, false positive. -->
 		<exclude name="Squiz.Commenting.FileComment.Missing" />
 	</rule>
