@@ -107,11 +107,3 @@ function wp_set_consent(category, value) {
     // Dispatch/Trigger/Fire the event
     document.dispatchEvent(event);
 }
-
-
-
-
-
-
-
-
