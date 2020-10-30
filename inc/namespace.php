@@ -53,6 +53,13 @@ function enqueue_api() {
 	 */
 	$consent_type = apply_filters( 'wp_get_consent_type', 'optin' );
 
+	/**
+	 * The list of active consent types.
+	 *
+	 * @param array $consent_types The available consent types.
+	 */
+	$consent_types = apply_filters( 'wp_consent_types', [ 'optin', 'optout' ] );
+
 	wp_localize_script(
 		'altis-consent-api',
 		'consent_api',
