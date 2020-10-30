@@ -29,6 +29,9 @@ function enqueue_api() {
 
 	wp_enqueue_script( 'altis-consent-api', WP_CONSENT_API_URL . "src/wp-consent-api$min.js", [], WP_CONSENT_API_VERSION, true );
 
+		// Get the cookie expiration or set a default of 30 days.
+		$expiration = isset( $options['cookie_expiration'] ) ? $options['cookie_expiration'] : 30;
+
 	/**
 	 * When the consenttype (optin or optout) can be set dynamically, we can tell plugins to wait in the javascript until the consenttype has been determined.
 	 *
@@ -36,8 +39,18 @@ function enqueue_api() {
 	 */
 	$waitfor_consent_hook = apply_filters( 'wp_consent_api_waitfor_consent_hook', false );
 
-	$expiration   = isset( $options['cookie_expiration'] ) ? intval( $options['cookie_expiration'] ) : 30;
-	$prefix       = apply_filters( 'wp_consent_cookie_prefix', 'wp_consent' );
+	/**
+	 * The consent cookie prefix. Defaults to wp_consent_.
+	 *
+	 * @param string $prefix The active cookie prefix.
+	 */
+	$prefix = apply_filters( 'wp_consent_cookie_prefix', 'wp_consent' );
+
+	/**
+	 * The active consent type. Defaults to optin.
+	 *
+	 * @param string $consent_type The active consent type.
+	 */
 	$consent_type = apply_filters( 'wp_get_consent_type', 'optin' );
 
 	wp_localize_script(
