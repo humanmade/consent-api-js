@@ -36,7 +36,7 @@ function enqueue_api() {
 	 */
 	$waitfor_consent_hook = apply_filters( 'wp_consent_api_waitfor_consent_hook', false );
 
-	$expiration   = $options['cookie_expiration'] ?: 30;
+	$expiration   = isset( $options['cookie_expiration'] ) ? intval( $options['cookie_expiration'] ) : 30;
 	$prefix       = apply_filters( 'wp_consent_cookie_prefix', 'wp_consent' );
 	$consent_type = apply_filters( 'wp_get_consent_type', 'optin' );
 
