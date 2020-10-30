@@ -11,6 +11,13 @@ defined( 'WP_CONSENT_API_URL' ) or define( 'WP_CONSENT_API_URL', plugin_dir_url(
 defined( 'WP_CONSENT_API_VERSION' ) or define( 'WP_CONSENT_API_VERSION', get_plugin_data()['Version'] ) . ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '-' . time() : '';
 
 /**
+ * Enqueue the JavaScript API.
+ */
+function bootstrap() {
+	add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_api' );
+}
+
+/**
  * Get the plugin data from the file header.
  *
  * @return array Array of plugin file header values keyed by header name.

@@ -34,7 +34,9 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
  */
 
+namespace Altis\Consent\API;
+
 require_once __DIR__ . '/inc/namespace.php';
 
 // Load the Consent API.
-Altis\Consent\enqueue_api();
+bootstrap();
