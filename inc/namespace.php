@@ -12,8 +12,11 @@ defined( 'WP_CONSENT_API_VERSION' ) or define( 'WP_CONSENT_API_VERSION', get_plu
 
 /**
  * Get the plugin data from the file header.
+ *
+ * @return array Array of plugin file header values keyed by header name.
+ * @see    get_file_data http://developer.wordpress.org/reference/functions/get_file_data/
  */
-function get_plugin_data() {
+function get_plugin_data() : array {
 	return get_file_data( __FILE__, [ 'Version' => 'Version' ], false );
 }
 
