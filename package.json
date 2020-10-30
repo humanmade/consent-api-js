@@ -1,6 +1,6 @@
 {
   "name": "altis-consent-api",
-  "version": "1.0.2",
+  "private": true,
   "description": "Javascript Consent API to read and register the current consent category.",
   "main": "plugin.php",
   "scripts": {
