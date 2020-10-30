@@ -29,8 +29,10 @@ function enqueue_api() {
 
 	wp_enqueue_script( 'altis-consent-api', WP_CONSENT_API_URL . "src/wp-consent-api$min.js", [], WP_CONSENT_API_VERSION, true );
 
-	/*
+	/**
 	 * When the consenttype (optin or optout) can be set dynamically, we can tell plugins to wait in the javascript until the consenttype has been determined.
+	 *
+	 * @param bool $waitfor_consent_hook Wait until consent has been given.
 	 */
 	$waitfor_consent_hook = apply_filters( 'wp_consent_api_waitfor_consent_hook', false );
 
