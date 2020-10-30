@@ -60,6 +60,7 @@ function enqueue_api() {
 	 */
 	$consent_types = apply_filters( 'wp_consent_types', [ 'optin', 'optout' ] );
 
+	// Send the variables and filterable values to the javascript consent API.
 	wp_localize_script(
 		'altis-consent-api',
 		'consent_api',
