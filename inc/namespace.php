@@ -65,10 +65,10 @@ function enqueue_api() {
 		'altis-consent-api',
 		'consent_api',
 		[
-			'consent_type'         => $consent_type,
-			'waitfor_consent_hook' => $waitfor_consent_hook,
-			'cookie_expiration'    => $expiration,
-			'cookie_prefix'        => $prefix,
+			'consent_type' => in_array( $consent_type, $consent_types, true ) ? $consent_type : 'optin',
+			'waitfor_consent_hook' => (bool) $waitfor_consent_hook,
+			'cookie_expiration' => intval( $expiration ),
+			'cookie_prefix' => sanitize_text_field( $prefix ),
 		]
 	);
 }
