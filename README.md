@@ -2,6 +2,10 @@
 
 Forks the JavaScript Consent API in [rlankhorst/wp-consent-level-api](https://github.com/rlankhorst/wp-consent-level-api)
 
+Removes the PHP-based API entirely in favor of the JS-only consent API.
+
+**Note:** In order for linting to work properly, `eslint` must already be installed and exist globally.
+
 ## Description
 
 Consent API to read and register the current consent category, allowing consent management plugins and other plugins to work together, improving compliancy.

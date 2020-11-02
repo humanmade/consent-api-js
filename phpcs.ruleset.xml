@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ruleset name="altis-consent-api">
+	<description>PHPCS rules for Altis Consent API</description>
+
+	<!-- Defaults -->
+	<arg name="extensions" value="php"/>
+	<config name="show_progress" value="1"/>
+
+	<!-- Use HM Coding Standards -->
+	<rule ref="vendor/humanmade/coding-standards">
+		<!-- Ignore file comment sniff, false positive. -->
+		<exclude name="Squiz.Commenting.FileComment.Missing" />
+	</rule>
+
+	<!-- Use PHPDoc rules -->
+	<rul ref="WordPress-Docs"/>
+
+	<!-- Ignore 3rd-party code -->
+	<exclude-pattern>vendor/*</exclude-pattern>
+</ruleset>
