@@ -7,7 +7,7 @@
 
 namespace Altis\Consent\API;
 
-defined( 'WP_CONSENT_API_URL' ) or define( 'WP_CONSENT_API_URL', plugin_dir_url( __FILE__ ) );
+defined( 'WP_CONSENT_API_URL' ) or define( 'WP_CONSENT_API_URL', plugin_dir_url( dirname( __FILE__ ) ) );
 defined( 'WP_CONSENT_API_VERSION' ) or define( 'WP_CONSENT_API_VERSION', get_plugin_data()['Version'] ) . ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '-' . time() : '';
 
 /**
