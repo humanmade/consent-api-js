@@ -44,7 +44,7 @@ function enqueue_api() {
 	 *
 	 * @param bool $waitfor_consent_hook Wait until consent has been given.
 	 */
-	$waitfor_consent_hook = apply_filters( 'wp_consent_api_waitfor_consent_hook', false );
+	$waitfor_consent_hook = apply_filters( 'wp_consent_api_waitfor_consent_hook', '__return_false' );
 
 	/**
 	 * The consent cookie prefix. Defaults to wp_consent_.
