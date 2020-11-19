@@ -51,7 +51,9 @@ function enqueue_api() {
 	 *
 	 * @param string $prefix The active cookie prefix.
 	 */
-	$prefix = apply_filters( 'wp_consent_cookie_prefix', 'wp_consent' );
+	$prefix = apply_filters( 'wp_consent_cookie_prefix', function() {
+		return 'wp_consent';
+	} );
 
 	/**
 	 * The active consent type. Defaults to optin.
