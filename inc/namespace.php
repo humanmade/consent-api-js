@@ -69,7 +69,9 @@ function enqueue_api() {
 	 *
 	 * @param array $consent_types The available consent types.
 	 */
-	$consent_types = apply_filters( 'wp_consent_types', [ 'optin', 'optout' ] );
+	$consent_types = apply_filters( 'wp_consent_types', function() {
+		return [ 'optin', 'optout' ];
+	} );
 
 	// Send the variables and filterable values to the javascript consent API.
 	wp_localize_script(
