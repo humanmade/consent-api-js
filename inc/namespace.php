@@ -60,7 +60,9 @@ function enqueue_api() {
 	 *
 	 * @param string $consent_type The active consent type.
 	 */
-	$consent_type = apply_filters( 'wp_get_consent_type', 'optin' );
+	$consent_type = apply_filters( 'wp_get_consent_type', function() {
+		return 'optin';
+	} );
 
 	/**
 	 * The list of active consent types.
