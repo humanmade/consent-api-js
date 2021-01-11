@@ -53,7 +53,7 @@ function wp_has_consent(category) {
  * @param {string} name The cookie name to set.
  * @param {string} value The cookie value to set.
  */
-function consent_api_set_cookie(name, value) {
+function consent_api_set_cookie(name, value, path = '/') {
     var secure = ";secure";
     var days = consent_api.cookie_expiration;
     var date = new Date();
@@ -62,7 +62,7 @@ function consent_api_set_cookie(name, value) {
 
     if (window.location.protocol !== "https:") secure = '';
 
-    document.cookie = name + "=" + value + secure + expires + ";path=/";
+    document.cookie = name + "=" + value + secure + expires + ";path=" + path;
 }
 
 /**
