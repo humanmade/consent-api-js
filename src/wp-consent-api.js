@@ -50,8 +50,9 @@ function wp_has_consent(category) {
 /**
  * Set cookie by consent type.
  *
- * @param {string} name The cookie name to set.
+ * @param {string} name  The cookie name to set.
  * @param {string} value The cookie value to set.
+ * @param {string} path  The cookie path to set.
  */
 function consent_api_set_cookie(name, value, path = '/') {
     var secure = ";secure";
