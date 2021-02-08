@@ -25,8 +25,8 @@
  * Plugin Name:       WP Consent API JS
  * Plugin URI:        https://github.com/humanmade/consent-api-js
  * Description:       Forks the JavaScript Consent API in rlankhorst/wp-consent-level-api. Consent Level API to read and register the current consent level for cookie management and improving compliance with privacy laws.
- * Version:           1.0.2
- * Author:            RogierLankhorst and Human Made
+ * Version:           1.0.6
+ * Author:            Rogier Lankhorst and Human Made
  * Author URI:        https://humanmade.com
  * Requires at least: 5.0
  * Requires PHP:      5.6
